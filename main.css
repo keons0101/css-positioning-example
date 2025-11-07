@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 21;
+}
+
+nav {
+    padding: 10px 32px;
+    min-height: 80px;
+    background-color: rgb(66, 66, 66);
+}
+
+#nav-logo {
+    max-height: 60px;
+}
+
+.spacer {
+    /* border: 1px solid red; */
+    display: inline-block;
+    /* Parent width - Logo width - Menu <ul> width */
+    width: calc(100% - 50px - 260px);
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: aliceblue;
+}
+
+nav ul li a:hover {
+    color: #B7987C;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+
+/* ----------- MAIN STYLES ----------- */
+
+/* --- Main Container --- */
+main {
+    min-height: 70vh;
+}
+
+.article-container {
+    width: 75%;
+    margin-top: 8px;
+}
+/* --- Article --- */
+.article-section {
+    padding: 16px;
+}
+
+.article-item {
+    scroll-margin-top: 90px;
+}
+
+.article-item h2, .article-item p, .article-item img {
+    margin-bottom: 16px;
+}
+
+.article-item img {
+    height: 300px;
+}
+
+/* ----- Main Aside ----- */
+.main-aside {
+    width: 24%;
+    text-align: center;
+    position: sticky;
+    top: 84px;
+}
+
+
+.main-aside h2 {
+    color: aliceblue;
+    margin: 8px 0 24px;
+}
+
+.main-aside, .article-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-aside-nav {
+    background-color: rgb(45, 45, 45);
+    border-left: 1px solid gray;
+    min-height: 90vh;
+}
+
+.main-aside-nav ul li {
+    display: block;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.main-aside-nav ul li a {
+    color: blue;
+}
+
+/* ----------- FOOTER STYLES ----------- */
+
+footer a.footer-nav-items:link,
+footer a.footer-nav-items:visited {
+  color: rgb(172, 172, 255);
+}
+
+footer a.footer-nav-items:hover {
+  color: rgb(172, 172, 255);
+}
+
+
+.footer-nav {
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: aliceblue;
+    margin: 10px 0;
+}
+
+.footer-nav {
+    text-align: center;
+    padding: 32px 32px;
+}
+
+.footer-nav-list {
+    margin: 0;
+}
+
