@@ -3,10 +3,20 @@
     margin: 0px;
     padding: 0px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home-title {
+    scroll-margin-top: 90px;
+}
+
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    width: 100%;
+    /* width: 100%; */
+    width: 100vw;
     z-index: 21;
 }
 
@@ -60,12 +70,64 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* --- Services Dropdown Menu --- */
+#services-item {
+    position: relative;
+
+}
+
+#services-item:hover #services-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#services-menu {
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    background-color: #252525;
+    padding: 8px;
+    z-index: 1;
+    margin-bottom: 0px;
+    transform: translateY(-2vh);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.15s;
+}
+
+#services-menu li {
+    margin-right: 0px;
+    margin: 4px 0px 4px;
+}
+
+#services-menu a {
+    padding-top: 10px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
 
 /* ----------- MAIN STYLES ----------- */
 
+body {
+    padding-top: 90px;
+}
+
+#back-to-top {
+    position: sticky;
+    bottom: 20px;
+    display: inline-block;
+    margin-left: calc(100% - 10px);
+    padding: 8px 12px 8px;
+    border-radius: 100%;
+    border: 2px solid #B7987C;
+    text-decoration: none;
+}
 /* --- Main Container --- */
 main {
     min-height: 70vh;
+    position: relative;
 }
 
 .article-container {
@@ -77,9 +139,9 @@ main {
     padding: 16px;
 }
 
-.article-item {
+/* .article-item {
     scroll-margin-top: 90px;
-}
+} */
 
 .article-item h2, .article-item p, .article-item img {
     margin-bottom: 16px;
@@ -88,6 +150,8 @@ main {
 .article-item img {
     height: 300px;
 }
+
+
 
 /* ----- Main Aside ----- */
 .main-aside {

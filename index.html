@@ -14,14 +14,48 @@
             <ul class="nav-list">
                 <li class="nav-list-item"><a href="#" class="current">Home</a></li>
                 <li class="nav-list-item"><a href="./pages/about.html">About</a></li>
-                <li class="nav-list-item"><a href="./pages/services.html">Services</a></li>
+                <li class="nav-list-item" id="services-item">
+                    <a href="./pages/services.html">Services</a>
+                    <ul id="services-menu">
+                        <li><a href="#">Gardening</a></li>
+                        <li><a href="#">Landscaping</a></li>
+                        <li><a href="#">Weed Control</a></li>
+                        <li><a href="#">Tree Removal</a></li>
+                    </ul>
+                </li>
                 <li class="nav-list-item"><a href="./pages/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1 style="text-align: center;">Home Page</h1>
+        <div class="article-container">
+            <h1 style="text-align: center;" id="home-title">Services Page</h1>
+            <article class="article-section">
+                <div class="article-item" id="gardening-article">                   
+                    <h2>Gardening</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>              
+                    <img src="../images/gardening.jpeg" alt="Two hands planting a plant">
+                </div>
+                <div class="article-item" id="landscaping-article">                   
+                    <h2>Landscaping</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>              
+                    <img src="../images/landscaping.jpg" alt="Two hands planting a plant">
+                </div>
+                <div class="article-item" id="weed-control-article">                   
+                    <h2>Weed Control</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>              
+                    <img src="../images/weed-control.jpg" alt="Two hands planting a plant">
+                </div>
+                <div class="article-item" id="tree-removal-article">                   
+                    <h2>Tree Removal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam sint placeat eveniet maxime alias, nulla modi numquam porro voluptatem architecto id. Odit nostrum, necessitatibus consequuntur natus delectus aspernatur quas! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>              
+                    <img src="../images/tree-removal.jpg" alt="Two hands planting a plant">
+                </div>
+                <a href="#home-title" id="back-to-top">&uarr;</a>
+            </article>
+        </div>
+        
     </main>
 
     <footer>
